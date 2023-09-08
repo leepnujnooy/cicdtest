@@ -9,7 +9,7 @@ JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
 
 CURRENT_PID=$(pgrep -f $APP_NAME)
 
-if[ -z $CURRENT_PID]
+if[ $CURRENT_PID -z ]
 then
   echo "> 종료할거없음"
 
