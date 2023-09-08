@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /cicdtest
+
+permissions:
+  - object: /cicdtest/
+    owner: cicdtest
+    group: cicdtest
+
+hooks:
+  AfterInstall:
+    - location: scripts/deploy.sh
+      timeout: 60
+      runas: cicdtest
