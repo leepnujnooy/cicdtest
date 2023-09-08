@@ -1,6 +1,6 @@
 
 
-REPOSITORY=/home/cicdtest
+REPOSITORY=/
 cd $REPOSITORY
 
 APP_NAME=cicdtest
