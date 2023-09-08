@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/")
     public String test(){
-        return "수정7번째";
+        return "수정8번째";
     }
 }
